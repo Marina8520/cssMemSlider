@@ -35,9 +35,9 @@ input {
     visibility: hidden;
 }
 .photo {
-    width: 100%;
+    width: 25%;
     height: 100%;
-    
+    transition: all 0.6s ease;
 }
 
 img {
@@ -53,11 +53,26 @@ img {
     justify-content: space-between;
 }
 
-.text {
+.line {
     width: 70%;
+    height: 150%;
     text-align:start;
     color: rgb(81, 81, 206);
     font-size: 20px;
+    overflow: hidden;
+}
+
+.lines {
+    width: 400%;
+    display: flex;
+}
+
+.text {
+    width: 100%;
+    text-align:start;
+    color: rgb(81, 81, 206);
+    font-size: 20px;
+    transition: all 0.6s ease;
 }
 
 .change_mem {
@@ -109,12 +124,14 @@ img {
     }
 }
 
+
+
 #one:checked ~ .first {
     margin-left: 0;
  }
  
  #two:checked ~ .first {
-    margin-left: -35%;
+    margin-left: -50%;
  }
  
  #three:checked ~ .first {
@@ -122,5 +139,21 @@ img {
  }
  
  #four:checked ~ .first {
-    margin-left: -0%;
+    margin-left: -150%;
+ }
+
+ #one:checked ~ .first_text {
+    margin-left: 0;
+ }
+ 
+ #two:checked ~ .first_text {
+    margin-left: -50%;
+ }
+ 
+ #three:checked ~ .first_text {
+    margin-left: -100%;
+ }
+ 
+ #four:checked ~ .first_text {
+    margin-left: -150%;
  }
